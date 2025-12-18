@@ -201,22 +201,14 @@ variable, the end-to-end tests https://docs.cypress.io/guides/references/proxy-c
 useful to e.g. run the tests through tools like
 https://www.zaproxy.org/[ZAP] or Burpsuite.
 
-=== Manually testing packaged distributions
+==== Refactoring Safety Net (RSN) for Coding Challenges
 
-During releases the application will be packaged into `.zip`/`.tgz`
-archives for another easy setup method. When you contribute a change
-that impacts what the application needs to include, make sure you test
-this manually on your system.
+When changing existing code that is part of a Coding Challenge, you should run the Refactoring Safety Net (RSN) to detect accidental or forgotten changes in fix option files or the original code snippet. See xref:part5/code-snippets.adoc#_refactoring_safety_net[Refactoring Safety Net] for details.
 
 [,bash]
 ----
-npm install --production && grunt package
+npm run rsn
 ----
-
-Then take the created archive from `/dist` and follow the steps
-described above in
-https://github.com/juice-shop/juice-shop#packaged-distributions--[Packaged Distributions]
-to make sure nothing is broken or missing.
 
 ==== Smoke tests
 
@@ -235,6 +227,23 @@ cd dist && tar -zxf juice-shop-*.tgz && cd juice-shop_*
 npm start &
 ../../test/smoke/smoke-test.sh http://localhost:3000
 ----
+
+=== Manually testing packaged distributions
+
+During releases the application will be packaged into `.zip`/`.tgz`
+archives for another easy setup method. When you contribute a change
+that impacts what the application needs to include, make sure you test
+this manually on your system.
+
+[,bash]
+----
+npm install --production && grunt package
+----
+
+Then take the created archive from `/dist` and follow the steps
+described above in
+https://github.com/juice-shop/juice-shop#packaged-distributions--[Packaged Distributions]
+to make sure nothing is broken or missing.
 
 === Development mode for Angular frontend
 
