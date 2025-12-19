@@ -391,7 +391,7 @@ organization. If a previously blocked user opens another *spam* PR, they will be
 Submitting non-accidental *spam*
 PRs - especially during events like Hacktoberfest or Google Summer of Code - can lead to a
 permanent ban right away. The same applies for PRs with obviously malicious or abusive intent as
-detailed in the Juice Shop's https://github.com/juice-shop/juice-shop/blob/master/CODE_OF_CONDUCT.adoc[Code of Conduct].
+detailed in the Juice Shop's https://github.com/juice-shop/juice-shop/blob/master/CODE_OF_CONDUCT[Code of Conduct].
 
 ==== Redemption from banishment
 
