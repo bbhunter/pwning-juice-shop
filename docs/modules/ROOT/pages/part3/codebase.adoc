@@ -18,7 +18,7 @@ UI looks nicely familiar and is easy to use. The interface is also built to be r
 throughout the frontend are from the vast
 https://fontawesome.com/[Font Awesome 5] collection.
 
-ℹ️ Please note that *all client-side code is written in Typescript*
+NOTE: Please note that *all client-side code is written in Typescript*
 which is compiled into regular JavaScript during the build process.
 
 image::part3/architecture-client.png[Client tier focus]
@@ -89,7 +89,7 @@ export class FeedbackService {
 }
 ----
 
-🚨 Unit tests for all services can be found next to their `+*.service.ts+`
+TIP: Unit tests for all services can be found next to their `+*.service.ts+`
 files in the `frontend/src/app/Services` folder as `+*.service.spec.ts+`
 files. They are https://jasmine.github.io[Jasmine 2] specifications
 which are executed by the https://karma-runner.github.io[Karma] test
@@ -230,7 +230,7 @@ export class ContactComponent implements OnInit {
 }
 ----
 
-🚨 Unit tests for all components can be found in their subfolders within
+TIP: Unit tests for all components can be found in their subfolders within
 `frontend/src/app/` as `+*.component.spec.ts+` files. They are
 https://jasmine.github.io[Jasmine 2] specifications which are executed
 by the https://karma-runner.github.io[Karma] test runner.
@@ -255,7 +255,7 @@ https://material.angular.io/[Angular Material] for styling and CSS Flexbox and G
 responsiveness. Furthermore most views incorporate icons from the
 https://fontawesome.com/[Font Awesome 5] collection.
 
-ℹ️ Understanding the
+IMPORTANT: Understanding the
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout[CSS Flexbox] and https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout[Grid] and [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Relationship_of_grid_layout_with_other_layout_methods]their relationship
 is crucial to be able to write UI elements or entire screens without
 breaking responsiveness!
@@ -333,7 +333,7 @@ _Contact Us_ screen.
 </div>
 ----
 
-ℹ️ In the entire Juice Shop code base, inline templates are *never*
+NOTE: In the entire Juice Shop code base, inline templates are *never*
 used. Templates must *always* be described in separate `.html` files.
 
 === Internationalization
@@ -371,7 +371,7 @@ process (launched with `npm install`) of the application. This creates
 an `frontend/dist/frontend` folder, which is the one actually delivered
 to the Browser to load all application-specific client-side code.
 
-ℹ️ If you want to quickly test client-side code changes, it can be
+TIP: If you want to quickly test client-side code changes, it can be
 cumbersome and slow to launch `npm install` over and over again. Instead
 you can use `npm run serve` to keep let Angular watch for client-code
 changes and recompile the affected parts on the fly. You usually not
@@ -415,7 +415,7 @@ such as
  ** catching unhandled exceptions and presenting a default error screen
 (via `errorhandler`)
 
-🚨 Integration tests for all routes can be found in the `test/api`
+TIP: Integration tests for all routes can be found in the `test/api`
 folder alongside all other API endpoint tests, from where
 https://www.frisbyjs.com/[Frisby.js]/ https://facebook.github.io/jest/[Jest]
 assert the functionality of the entire backend on HTTP-request/response
@@ -573,7 +573,7 @@ all hand-written endpoints can be used anonymously. The upcoming section
 <<_access_control_on_routes,Access control on routes>> explains the
 available authorization checks.
 
-🚨 Unit tests for hand-written routes can be found in the `test/server`
+TIP: Unit tests for hand-written routes can be found in the `test/server`
 folder. These tests are written using the http://chaijs.com/[Chai]
 assertion library in conjunction with the https://mochajs.org/[Mocha]
 test framework.

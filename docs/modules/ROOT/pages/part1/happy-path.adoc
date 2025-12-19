@@ -116,9 +116,9 @@ image:part1/select-address.png[Delivery address selection]
 image:part1/delivery-method.png[Delivery method selection]
 image:part1/payment.png[Payment card selection]
 
-🚨 *Do not enter any real credit card or address data anywhere in the
+WARNING: Do not enter any real credit card or address data anywhere in the
 Juice Shop! Always remember that it is not a real shop, and it is
-intentionally riddled with security and privacy flaws!*
+intentionally riddled with security and privacy flaws!
 
 In the _Add a coupon_ section you can redeem a code for a discount.
 Unfold the _Other payment options_ section to see links with donation
@@ -140,7 +140,7 @@ will give you access to several secondary use cases of the Juice Shop.
 This menu is obviously only available when you are logged in with your
 user account.
 
-ℹ️ We will cover only a fraction of the available functionality from
+NOTE: We will cover only a fraction of the available functionality from
 the user menu in the following sub-sections. It is recommended to
 explore the rest on your own before diving into any hacking exercises.
 
@@ -167,7 +167,7 @@ to edit or delete already saved addresses as well as add new ones.
 image::part1/stored-address.png[Stored Address]
 image::part1/add-address.png[Add Address]
 
-🚨 *Do not enter real address data here!*
+WARNING: Do not enter real address data here!
 
 [discrete]
 ==== My Payment Options
@@ -177,7 +177,7 @@ delete already saved cards or to add new ones.
 
 image::part1/stored-card.png[Stored Card]
 
-🚨 *Do not enter real credit card data here!*
+WARNING: Do not enter real credit card data here!
 
 [discrete]
 ==== Juice Shop Wallet
@@ -275,9 +275,9 @@ your order along with a delivery status and expected delivery date.
 
 image::part1/track-orders-result.png[Track Orders Result]
 
-_Just as there was no "real" payment was happening, you will hopefully
+NOTE: Just as there was no "real" payment was happening, you will hopefully
 understand that there is no "real" order delivery happening - no matter
-what the order tracking dialog suggested._
+what the order tracking dialog suggested.
 
 [discrete]
 === Menu
@@ -359,7 +359,7 @@ partial translation.
 
 image::part1/language-selection.png[Language Selection]
 
-_If you want to know more about (or even help with) the localization of
+TIP: If you want to know more about (or even help with) the localization of
 OWASP Juice Shop, please refer to the
 xref:part3/translation.adoc#_helping_with_translations[Help with translation] chapter in part III of
-this book._
+this book.

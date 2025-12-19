@@ -63,11 +63,11 @@ Part five gives detailed guidance on special "behind the scenes" topics like che
 
 '''
 
-_Please be aware that this book is not supposed to be a comprehensive
+NOTE: Please be aware that this book is not supposed to be a comprehensive
 introduction to Web Application Security in general. For every category
 of vulnerabilities present in the OWASP Juice Shop you will find a brief
 explanation - typically by quoting and referencing to existing content
-on the given topic._
+on the given topic.
 
 '''
 

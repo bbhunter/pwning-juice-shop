@@ -166,7 +166,7 @@ conveniently as your `resolved` function in any challenge hint:
 | `resolved: waitForDevTools()`
 |===
 
-ℹ️ The helper functions are supposed to be self-explanatory enough on
+NOTE: The helper functions are supposed to be self-explanatory enough on
 their own. Please check out the <<_reference_example,Reference example>>
 for more information on when and how to use each one.
 

@@ -9,8 +9,8 @@ Often there are multiple ways to solve a challenge. In most cases just
 one possible solution is presented here. This is typically the easiest
 or most obvious one from the author's perspective.
 
-_The challenge solutions found in this release of the companion guide
-are compatible with {juiceShopVersion} of OWASP Juice Shop._
+NOTE: The challenge solutions found in this release of the companion guide
+are compatible with {juiceShopVersion} of OWASP Juice Shop.
 
 == ⭐ Challenges
 
@@ -456,7 +456,7 @@ the same payload, i.e. `{"ProductId": 14,"BasketId": "1","quantity":
 . Submitting this request will satisfy the validation based on your own
 `BasketId` but put the product into the other basket!
 
-ℹ️ With other ``BasketId``s you might need to play with the order of the
+TIP: With other ``BasketId``s you might need to play with the order of the
 duplicate property a bit and/or make sure your own `BasketId` is lower
 than the one of the target basket to make this HPP vulnerability work in
 your favor.
@@ -577,8 +577,8 @@ for this challenge:
 })
 ----
 
-_It is worth noting that both alternate solutions would still work even
-if the CAPTCHA-pinning problem would be fixed in the application!_
+TIP: It is worth noting that both alternate solutions would still work even
+if the CAPTCHA-pinning problem would be fixed in the application!
 
 Last but not least, the following
 https://github.com/aaronhnatiw/race-the-web[RaceTheWeb] config could
@@ -2417,10 +2417,10 @@ the request processing takes up to 2 seconds and then times out (to
 prevent you from actually DoS'ing your application) but still solving
 the challenge.
 
-_You might feel tempted to try the classic *Billion laughs attack* but
+TIP: You might feel tempted to try the classic *Billion laughs attack* but
 will quickly notice that the XML parser is hardened against it, giving
 you a status `410` HTTP error saying `Detected an entity reference
-loop`._
+loop`.
 
 ____
 In computer security, a billion laughs attack is a type of
@@ -2641,9 +2641,10 @@ image::appendix/coupon_tweet_bot.png[Coupon tweeted by a bot]
 . Some Internet research will bring you to the
 https://www.npmjs.com/package/juicy-coupon-bot[NPM module `juicy-coupon-bot`]
 and its associated GitHub repository
-https://github.com/juice-shop/juicy-coupon-bot. ℹ️ _As this is
-not part of the Juice Shop repo itself and it is publicly accessible,
-analyzing this repository is *not* considered cheating!_
+https://github.com/juice-shop/juicy-coupon-bot.
++
+TIP: As this is not part of the Juice Shop repo itself and it is publicly accessible,
+analyzing this repository is *not* considered cheating!
 . Open the
 https://github.com/juice-shop/juicy-coupon-bot/blob/master/.github/workflows/coupon-distribution.yml[`.github/workflows/coupon-distribution.yml`]
 to see how the bot's _Monthly Coupon Distribution_ workflow is set
@@ -2831,10 +2832,10 @@ verbose = true
 
 === Log in with the support team's original user credentials
 
-_Solving this challenge requires http://keepass.info[KeePass 2.x]
+IMPORTANT: Solving this challenge requires http://keepass.info[KeePass 2.x]
 installed on your computer. If you are using a non-Windows OS you can
 try using some unofficial port but there is no guarantee the file can be
-opened on those._
+opened on those.
 
 . Find out that the support team's email address is `support@juice-sh.op` eiher via deduction of the pattern from other users or by completing the <<_retrieve_a_list_of_all_user_credentials_via_sql_injection,Retrieve a list of all user credentials via SQL Injection>> challenge.
 . Brute forcing the password on of this user <httpc://localhost:3000/#/login> is an entirely hopeless approach.
@@ -2998,7 +2999,7 @@ https://github.com/J12934/juicy-malware/blob/master/juicy_malware_linux_64?raw=t
 && chmod +x malware && ./malware')}+`. Submit this as _Username_ and
 (on a Linux server) the challenge should be marked as solved
 
-ℹ️ Remember that you need to use the right malware file for your
+TIP: Remember that you need to use the right malware file for your
 server's operation system and also their synonym command for `wget`.
 
 === Embed an XSS payload into our promo video

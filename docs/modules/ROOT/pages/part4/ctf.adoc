@@ -473,6 +473,6 @@ ____
 
 == Commercial use disclaimer
 
-Bear in mind: With the increasing number of challenge solutions (this
-book included) available on the Internet _it might *not* be wise to
-host a professional CTF for prize money_ with OWASP Juice Shop!
+CAUTION: With the increasing number of challenge solutions (this
+book included) available on the Internet, it might *not* be wise to
+host a professional CTF for prize money with OWASP Juice Shop!

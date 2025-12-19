@@ -14,8 +14,8 @@ following tables lists all challenges of the OWASP Juice Shop grouped by
 their difficulty and in the same order as they appear on the Score
 Board.
 
-_The challenge hints found in this release of the companion guide are
-compatible with {juiceShopVersion} of OWASP Juice Shop._
+NOTE: The challenge hints found in this release of the companion guide are
+compatible with {juiceShopVersion} of OWASP Juice Shop.
 
 ifeval::[{is_ctf} == 1]
 |===
