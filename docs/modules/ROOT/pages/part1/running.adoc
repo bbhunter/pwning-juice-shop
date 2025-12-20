@@ -257,14 +257,14 @@ To manually deploy OWASP Juice Shop on Heroku, follow these steps:
 
 . Access the deployed Juice Shop instance in the browser `heroku open`
 
-_Note:_ The `git add` and `git commit` steps are only required the first time or when new changes are made to the local repository.  If you have already committed the changes you can skip those steps and directly run `git push heroku master`
+NOTE: The `git add` and `git commit` steps are only required the first time or when new changes are made to the local repository.  If you have already committed the changes you can skip those steps and directly run `git push heroku master`
 
-_Note:_ If you have forked the Juice Shop repository, these steps will deploy your forked version of the application. To deploy the latest official version, clone the original repository from https://github.com/juice-shop/juice-shop.
+NOTE: If you have forked the Juice Shop repository, these steps will deploy your forked version of the application. To deploy the latest official version, clone the original repository from https://github.com/juice-shop/juice-shop.
 
-_As a little related anecdote, the OWASP Juice Shop was crowned
+TIP: As a little related anecdote, the OWASP Juice Shop was crowned
 https://hello.heroku.com/webmail/36622/679286305/8049a634b1a01b0aa75c0966325856dc9a463b7f1beeb6a2f32cbb30248b5bc6[Heroku Button of the Month in November 2017]
 and once more
-https://hello.heroku.com/webmail/36622/844098776/9fe33b8eda9eb79bca7ee569888b1874[in March 2019]:_
+https://hello.heroku.com/webmail/36622/844098776/9fe33b8eda9eb79bca7ee569888b1874[in March 2019]:
 
 image::part1/heroku-button-of-the-month.png["Heroku Button of the Month" November 2017]
 
@@ -279,7 +279,7 @@ image::part1/heroku-button-of-the-month.png["Heroku Button of the Month" Novembe
 . Sign up for an account on https://railway.app/[Railway] and log in to your account.
 . Visit https://railway.app/new/template/6JBGcJ to deploy Juice Shop on your Railway account.
 
-_A step-by-step guide can be found in https://alphasec.io/practice-hacking-skills-with-owasp-juice-shop/[this blog post]._
+TIP: A step-by-step guide can be found in https://alphasec.io/practice-hacking-skills-with-owasp-juice-shop/[this blog post].
 
 == Installing a specific release version
 
@@ -311,7 +311,7 @@ develop` before running `npm install`
 bkimminich/juice-shop:snapshot` instead of the usual `docker pull
 bkimminich/juice-shop`
 
-ℹ️ Please be aware that support by the Project Leaders or community is
+NOTE: Please be aware that support by the Project Leaders or community is
 limited (at best) for outdated and unreleased versions alike. To fully
 enjoy your OWASP Juice Shop experience, it is recommended to always use
 the latest version.

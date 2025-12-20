@@ -54,9 +54,10 @@ all metrics gathered via Prometheus as seen in the screenshots above.
 
 . https://grafana.com/get[Install Grafana] (for ease-of-use, best use
 the machine you also have Prometheus running on)
-. Start Grafana and visit it at http://localhost:3000 (ℹ️ _Its
-default port is the same as Juice Shop's, so if you run both on the
-same machine, one needs to be moved to a different port._)
+. Start Grafana and visit it at http://localhost:3000
++
+NOTE: Its default port is the same as Juice Shop's, so if you run both on the
+same machine, one needs to be moved to a different port.
 . Log in with `admin`/`admin`.
 . Go to _Configuration_ > _Data Sources_ at
 http://localhost:3000/datasourcesand click _Add data source_
@@ -71,10 +72,10 @@ found in the Juice Shop's GitHub repository.
 . Now visit the imported _Juice Shop Instance Dashboard_ by clicking on
 its name to view it! Voilá!
 
-ℹ️ _The "Juice Shop Instance Dashboard" template was forked from the
+TIP: The "Juice Shop Instance Dashboard" template was forked from the
 multi-instance dashboard of
 xref:part4/trainers.adoc#_hosting_individual_instances_for_multiple_users[MultiJuicer],
 so if you need to run and subsequently monitor multiple Juice Shop
 instances, best take a look at
 https://github.com/iteratec/multi-juicer[MultiJuicer] and our
-xref:part4/trainers.adoc#_trainers_guide[Trainer's guide]._
+xref:part4/trainers.adoc#_trainers_guide[Trainer's guide].

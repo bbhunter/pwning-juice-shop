@@ -125,7 +125,7 @@ the Juice Shop. It is supposedly hard to locate.
 
 include::../../partials/hints/typosquattingAngularChallenge.adoc[]
 
-ℹ️ There is no actual malice or mischief included, as the typosquatter
+NOTE: There is no actual malice or mischief included, as the typosquatter
 is completely harmless. Just keep in mind that in reality, a case like
 this could come with negative consequences and would sometimes be even
 harder to identify.
@@ -171,7 +171,7 @@ falling victim to the Trojanized update, they also install the
 embedded malicious code.footnote:3_12_4[https://www.rsa.com/en-us/blog/2017-02/are-software-supply-chain-attacks-the-new-norm]
 ____
 
-ℹ️ Please note that having the OWASP Juice Shop installed on your
+NOTE: Please note that having the OWASP Juice Shop installed on your
 computer _does not_ put you at any actual risk! This challenge does
 _neither_ install a backdoor or Trojan nor does it bring any other
 harmful code to your system!

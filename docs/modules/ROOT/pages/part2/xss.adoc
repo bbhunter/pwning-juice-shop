@@ -189,9 +189,9 @@ details, you can still go for a _blind approach_ by testing lots and
 lots of different attack payloads and check the reaction of the
 application.
 
-_When you actually understand a security mechanism you have a lot higher
+TIP: When you actually understand a security mechanism you have a lot higher
 chance to beat or trick it somehow, than by using a trial and error
-approach._
+approach.
 
 include::../../partials/hints/persistedXssFeedbackChallenge.adoc[]
 

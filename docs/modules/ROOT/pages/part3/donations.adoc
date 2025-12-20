@@ -66,11 +66,11 @@ https://owasp.org/www-policy/operational/donations.html[Donations Policy].
 
 image::part3/donate04.png[Restricted gift for Juice Shop]
 
-ℹ️ _While the Juice Shop appreciates such dedicated donations, please
+NOTE: While the Juice Shop appreciates such dedicated donations, please
 note that these add an organizational overhead for the OWASP Foundation.
 To this day no expenses of the categories mentioned above have ever been
 denied by OWASP for Juice Shop. Feel free to use a regular donation with
-attribution instead._
+attribution instead.
 
 == Attribution
 

@@ -186,9 +186,9 @@ on its blueprint in order to make it yourself?
 
 include::../../partials/hints/retrieveBlueprintChallenge.adoc[]
 
-ℹ️ _If you are running the Juice Shop with a custom theme and product
+NOTE: If you are running the Juice Shop with a custom theme and product
 inventory, the product to inspect will be a different one. The tooltip
-on the Score Board will tell you which one to look into._
+on the Score Board will tell you which one to look into.
 
 == Determine the answer to Emma's security question
 

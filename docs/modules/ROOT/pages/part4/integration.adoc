@@ -57,9 +57,9 @@ version (`master` branch)
 * http://preview.owasp-juice.shop/api/Challenges for the next version
 to be released (`develop` branch)
 
-🚨 _There is no uptime guarantee for either of these as they are both
+CAUTION: There is no uptime guarantee for either of these as they are both
 only free Heroku dynos. Please refrain from making unnecessary amounts
-of requests._
+of requests.
 
 === API integration example
 
