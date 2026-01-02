@@ -289,6 +289,14 @@ IMPORTANT: Please note that the client-side <<_unit_tests,Unit tests>> and
 <<_end_to_end_tests,End-to-end tests>> will not work on GitHub Codespaces
 due to the lack of a Chrome installation in the underlying container.
 
+=== AI Tools Disclosure
+
+All Pull Requests must disclose whether AI tools were used to generate or
+assist in the creation of code, documentation, or any other content within
+the contribution. The https://github.com/juice-shop/juice-shop/blob/master/.github/PULL_REQUEST_TEMPLATE.md[Pull Request template] includes a dedicated section for this purpose.
+
+WARNING: PRs lacking a truthful disclosure of used AI tools will be closed and might even be <<_handling_of_spam_prs,handled as spam>>.
+
 === Developer Certificate of Origin
 
 ____
