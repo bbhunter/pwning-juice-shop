@@ -649,6 +649,10 @@ OWASP Juice Shop.
 | <<_countrymapping_sub_mapping,`countryMapping` sub-mapping>>
 | List of mappings which associates challenges to countries on the challenge map of xref:part4/ctf.adoc#_running_fbctf[FBCTF]. Only needed for CTFs using xref:part4/ctf.adoc#_running_fbctf[FBCTF].
 | `~`
+
+| <<_systemwidenotifications_subsection,`systemWideNotifications` subsection>>
+| Configures an optional system-wide broadcast notification banner for CTF participants. When set up, the frontend polls an external URL and displays the current notification as a dismissable card.
+| `~`
 |===
 
 ==== `countryMapping` sub-mapping
@@ -664,6 +668,76 @@ using xref:part4/ctf.adoc#_running_fbctf[FBCTF]:
 IMPORTANT: When specifying `countryMapping`, it is mandatory to map *all
 challenges* in order to produce a valid configuration file. It is
 recommended to use `config/fbctf.yml` as a template for that purpose.
+
+==== `systemWideNotifications` subsection
+
+This optional subsection enables system-wide broadcast notifications for
+CTF participants. When configured, the Juice Shop frontend polls an
+external URL at a regular interval and displays the current notification
+as a dismissable card — similar in style to the _"Challenge Solved"_
+notification.
+
+The notification endpoint is *not* served by Juice Shop itself and must
+be provided externally by the CTF organizer (e.g. a simple static JSON
+file served via a web server, or a small API endpoint).
+
+NOTE: https://github.com/juice-shop/MultiJuicer[MultiJuicer] has built-in
+support for serving system-wide notifications, available starting with
+https://github.com/juice-shop/multi-juicer/releases/tag/v9.2.0[MultiJuicer v9.2.0].
+
+[cols="2,1,3"]
+|===
+| Property | Default | Description
+
+| `url`
+| `~`
+| URL of an external endpoint returning a JSON response of the form
+  `{ "message": "...", "enabled": true, "updatedAt": "<ISO 8601 timestamp>" }`.
+  When not set, the feature is disabled entirely and the frontend renders
+  nothing.
+
+| `pollFrequencySeconds`
+| `~`
+| Polling interval in seconds. Required (and must be a positive number)
+  when `url` is set. Juice Shop will fail validation on startup if `url`
+  is set but this value is missing, zero, or negative.
+|===
+
+The external endpoint must return a JSON object with the following fields:
+
+|===
+| Field | Type | Description
+
+| `message`
+| String
+| The notification text to display to all participants.
+
+| `enabled`
+| Boolean
+| When `false`, the notification is hidden regardless of the message content.
+
+| `updatedAt`
+| String
+| ISO 8601 timestamp used to determine whether a notification has changed
+  since the user last dismissed it. If the timestamp changes, the
+  dismissed card will reappear.
+|===
+
+Example response from the notification endpoint:
+
+[,json]
+----
+{
+  "message": "Hello CTF participants! Flag submission closes at 18:00 UTC.",
+  "enabled": true,
+  "updatedAt": "2026-02-14T12:44:38.423Z"
+}
+----
+
+The notification card is shown when `enabled` is `true` and `message` is
+a non-empty string. Once dismissed by the user, it will not reappear
+unless the `updatedAt` timestamp changes. If the poll request fails
+(network error, non-2xx response), the card is hidden silently.
 
 == Configuration example
 
@@ -808,6 +882,9 @@ ctf:
   showFlagsInNotifications: false
   showCountryDetailsInNotifications: none
   countryMapping: ~
+  systemWideNotifications:
+    url: https://example.com/api/notifications
+    pollFrequencySeconds: 60
 ----
 
 === Overriding default settings
