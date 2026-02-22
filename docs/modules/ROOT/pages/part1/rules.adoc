@@ -345,7 +345,7 @@ feature to work properly.
 
 If enabled, the
 xref:part1/challenges.adoc#_hacking_instructor[Hacking Instructor] script
-`tutorial.js` including
+`hacking-instructor-{hash}.js` including
 all on-screen tutorials is loaded lazily by the __Score Board__ and the
 __Welcome Banner__. You should exclude this file from all your manual or
 automated frontend code analysis. It contains step-by-step hints and
