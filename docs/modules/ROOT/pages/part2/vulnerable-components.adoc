@@ -44,7 +44,7 @@ libraries or other 3rd party components the application uses internally.
 | ⭐⭐⭐⭐⭐
 
 | Vulnerable Library
-| Inform the shop about a vulnerable library it is using. (Mention the exact library name and version in your comment)
+| Inform the shop about a high-severity vulnerability. (Mention the exact library name and version in your comment)
 | ⭐⭐⭐⭐
 |===
 
@@ -196,7 +196,7 @@ legit.
 
 include::../../partials/hints/jwtForgedChallenge.adoc[]
 
-== Inform the shop about a vulnerable library it is using
+== Inform the shop about a high-severity vulnerability
 
 This challenge is quite similar to
 xref:part2/cryptographic-issues.adoc#_inform_the_shop_about_an_algorithm_or_library_it_should_definitely_not_use_the_way_it_does[Inform the shop about an algorithm or library it should definitely not use the way it does]

@@ -1642,7 +1642,7 @@ also contains the user data in JSON format. But: This list has all the
 password hashes replaced with `*`-symbols, so it does not count as a
 solution for this challenge.
 
-=== Inform the shop about a vulnerable library it is using
+=== Inform the shop about a high-severity vulnerability
 
 Juice Shop depends on a JavaScript library with known vulnerabilities.
 Having the `package.json.bak` and using an online vulnerability database

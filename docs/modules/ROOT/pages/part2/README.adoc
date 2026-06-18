@@ -446,7 +446,7 @@ ifeval::[{is_ctf} == 1]
 | xref:part2/sensitive-data-exposure.adoc#_determine_the_answer_to_emmas_security_question[💡]
 
 | Vulnerable Library
-| Inform the shop about a vulnerable library it is using. (Mention the exact library name and version in your comment)
+| Inform the shop about a high-severity vulnerability. (Mention the exact library name and version in your comment)
 | xref:part2/vulnerable-components.adoc#_inform_the_shop_about_a_vulnerable_library_it_is_using[💡]
 
 | Wallet Depletion
@@ -1010,7 +1010,7 @@ ifeval::[{is_ctf} == 0]
 | xref:appendix/solutions.adoc#_determine_the_answer_to_emmas_security_question[📕]
 
 | Vulnerable Library
-| Inform the shop about a vulnerable library it is using. (Mention the exact library name and version in your comment)
+| Inform the shop about a high-severity vulnerability. (Mention the exact library name and version in your comment)
 | xref:part2/vulnerable-components.adoc#_inform_the_shop_about_a_vulnerable_library_it_is_using[💡]
 | xref:appendix/solutions.adoc#_inform_the_shop_about_a_vulnerable_library_it_is_using[📕]
 
