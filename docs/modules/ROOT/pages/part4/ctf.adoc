@@ -125,9 +125,7 @@ having a shared instance for each team is strongly discouraged, because
 Juice Shop is programmed as a single-user application.
 
 If you want to centrally host Juice Shop instances for any number of CTF
-participants you find more information in section
-xref:part4/trainers.adoc#_hosting_individual_instances_for_multiple_users[Hosting individual instances for multiple users]
-of the trainer's guide.
+participants we recommend using xref:part4/multi-juicer.adoc[our own Multi Juicer platform].
 
 It is absolutely important that all Juice Shop instances participating
 in a CTF use the same

@@ -43,7 +43,7 @@ Once the environment is ready, joining the community discussions on GitHub is th
 
 Professors and lecturers can leverage OWASP Juice Shop in various ways to enrich their security courses. Assigning contribution tasks as course projects allows students to gain real-world experience while earning academic credit. The platform is also ideally suited for use in security labs and exercises, where students can practice identifying and exploiting vulnerabilities in a safe, controlled environment. Detailed information on how to conduct such trainings can be found in our xref:part4/trainers.adoc[Trainer's Guide].
 
-Beyond regular coursework, professors can encourage student-led research on web application vulnerabilities or organize university-wide xref:part4/ctf.adoc[Capture The Flag (CTF)] events using the Juice Shop's built-in CTF mode. This not only fosters a competitive and fun learning atmosphere but also builds a stronger security community within the university.
+Beyond regular coursework, professors can encourage student-led research on web application vulnerabilities or organize university-wide xref:part4/ctf.adoc[Capture The Flag (CTF)] events using the Juice Shop's built-in CTF mode or our convenient and powerful xref:part4/multi-juicer.adoc[Multi Juicer platform]. This not only fosters a competitive and fun learning atmosphere but also builds a stronger security community within the university.
 
 == Contact and support
 

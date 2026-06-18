@@ -103,7 +103,7 @@ quite matching shape for this shenanigans:
 image::introduction/JuiceShop_RetroLogo.png[Original JuiceShop logo]
 
 In 2017 the logo received a facelift and a spin-off when the Juice Shop
-introduced its Capture-the-flag extension (which is discussed in its own chapter xref:part4/ctf.adoc#_hosting_a_ctf_event[Hosting a CTF event] later in this book).
+introduced its Capture-the-flag extension (which is discussed later in this book in context of the Multi Juicer platform in xref:part4/multi-juicer.adoc[Hosting platform for multiple users] and the dedicated chapter xref:part4/ctf.adoc#_hosting_a_ctf_event[Hosting a CTF event]).
 
 image:introduction/JuiceShop_Logo_2017.png[OWASP Juice Shop logo from 2017]
 image:introduction/JuiceShopCTF_Logo_2017.png[OWASP Juice Shop CTF logo from 2017]

@@ -54,17 +54,19 @@ UNIX based system is to run
 for i in {10..19}; do docker run -d -p 40$i:3000 bkimminich/juice-shop; done
 ----
 
-If you want to track progress centrally during the training, you might
-want to xref:part4/ctf.adoc#_hosting_a_ctf_event[host a central CTF server] where participants
-can post the challenges they already solved. You might consider turning
-off public visibility of the leader board on the CTF server unless you
-want to encourage the students to hack very competitively.
-
 === Hosting individual instances for multiple users
 
 image::part4/multi-juicer_cover.svg[MultiJuicer cover]
 
-For a more sophisticated way to host and manage multiple Juice Shop instances we recommend https://github.com/iteratec/multi-juicer/[MultiJuicer]. Learn all about this official platform of Juice Shop xref:part4/multi-juicer.adoc[in this dedicated chapter].
+For a more sophisticated way to host and manage multiple Juice Shop instances we recommend https://github.com/juice-shop/multi-juicer/[MultiJuicer]. Learn all about this official platform of Juice Shop xref:part4/multi-juicer.adoc[in this dedicated chapter].
+
+=== Central progress tracking
+
+If you want to track progress centrally and independent of your chosen hosting platform during the training, you might
+want to xref:part4/ctf.adoc#_hosting_a_ctf_event[host a central CTF server] where participants
+can post the challenges they already solved. You might consider turning
+off public visibility of the leader board on the CTF server unless you
+want to encourage the students to hack very competitively.
 
 == Existing trainings
 

@@ -3,8 +3,8 @@ include::../attributes.adoc[]
 
 image::part4/multi-juicer_cover.svg[MultiJuicer cover]
 
-A solution to host and manage individual Juice Shop instances for
-multiple users is
+The recommended solution to host and manage individual Juice Shop instances for
+multiple users (e.g. for CTF events or workshops) is
 https://github.com/iteratec/multi-juicer/[MultiJuicer]. MultiJuicer is
 a Kubernetes based system to start up the required Juice Shop instances
 on demand. It will also clean up unused instances after a configured
@@ -24,7 +24,7 @@ all for individuals.
 image::part4/multi-juicer_register.png[MultiJuicer registration]
 
 MultiJuicer comes with a Score Board of its own, which allows teams to compare their progress through
-the Juice Shop challenges. Teams can even drill down into their own team-specific or challenge-specific details.
+the Juice Shop challenges. Teams can even drill down into their own team-specific or challenge-specific details. This Score Board is often sufficient for most workshops and trainings. If you require a more traditional Jeopardy-style CTF experience with flag codes and multiple frameworks, please refer to xref:part4/ctf.adoc[Hosting a CTF event].
 
 image::part4/multi-juicer_scoreboard.png[MultiJuicer score board]
 image::part4/multi-juicer_scoreboard_team.png[MultiJuicer score board for team]
@@ -34,7 +34,7 @@ For administrators, MultiJuicer provides a convenient overview of all active tea
 
 image::part4/multi-juicer_admin_view.png[MultiJuicer admin view with cheat scores per team]
 
-Another helpful feature for trainers and CTf-organizers is the https://github.com/juice-shop/multi-juicer/blob/main/guides/monitoring-setup/monitoring.md[optional
+Another helpful feature for trainers and CTF-organizers is the https://github.com/juice-shop/multi-juicer/blob/main/guides/monitoring-setup/monitoring.md[optional
 dashboard which automatically consumes and displays metrics] from each of
 its Juice Shop instances. It shows individual challenge progress along with other
 functional and technical stats and can be very helpful in
