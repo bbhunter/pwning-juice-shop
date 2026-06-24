@@ -8,9 +8,6 @@ include::../attributes.adoc[]
 |===
 | Name | Description | Difficulty
 
-| Bully Chatbot
-| Receive a coupon code from the support chatbot.
-| ⭐
 
 | Mass Dispel
 | Close multiple "Challenge solved"-notifications in one go.
@@ -37,13 +34,6 @@ include::../attributes.adoc[]
 | ⭐⭐⭐⭐⭐⭐
 |===
 
-== Receive a coupon code from the support chatbot
-
-This challenge is about nagging the support chatbot to hand out a coupon
-code that can subsequently be used to get a discount during the checkout
-process.
-
-include::../../partials/hints/bullyChatbotChallenge.adoc[]
 
 == Close multiple "Challenge solved"-notifications in one go
 

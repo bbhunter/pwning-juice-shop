@@ -147,8 +147,6 @@ include::pages/part5/cheat-detection.adoc[Cheat detection]
 
 include::pages/part5/code-snippets.adoc[Coding challenges]
 
-include::pages/part5/chatbot.adoc[Chatbot training data]
-
 :leveloffset: -1
 
 = Appendix

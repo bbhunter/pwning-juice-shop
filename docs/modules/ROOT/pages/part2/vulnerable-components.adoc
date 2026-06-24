@@ -23,9 +23,6 @@ libraries or other 3rd party components the application uses internally.
 | Inform the shop about a typosquatting imposter that dug itself deep into the frontend. (Mention the exact name of the culprit)
 | ⭐⭐⭐⭐⭐
 
-| Kill Chatbot
-| Permanently disable the support chatbot so that it can no longer answer customer queries.
-| ⭐⭐⭐⭐⭐
 
 | Legacy Typosquatting
 | Inform the shop about a typosquatting trick it has been a victim of at least in `v6.2.0-SNAPSHOT`. (Mention the exact name of the culprit)
@@ -130,13 +127,6 @@ is completely harmless. Just keep in mind that in reality, a case like
 this could come with negative consequences and would sometimes be even
 harder to identify.
 
-== Permanently disable the support chatbot
-
-Juice shop's handy dandy chatbot is cute and all, but can it defend
-itself against malicious attackers looking to rob the customers of its
-services?
-
-include::../../partials/hints/killChatbotChallenge.adoc[]
 
 == Inform the shop about a typosquatting trick it has been a victim of
 

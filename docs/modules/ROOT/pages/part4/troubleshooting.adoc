@@ -89,12 +89,6 @@ fixed in a straightforward fashion when they fail:
 | `CTF country mappings for FBCTF are enabled while CTF flags are disabled`
 | Make sure `ctf.showFlagsInNotifications` is `true` when you also have configured `ctf.showCountryDetailsInNotifications` set to `name`, `flag` or `both`.
 
-| `+Intent ... is missing in chatbot training data+`
-| Make sure that your chatbot training data defines all mandatory `intent` objects defined in the xref:part5/chatbot.adoc#_chatbot_training_data[Chatbot training data] specification.
-
-| `+Answer with ... action and handler ... is missing for intent ...+`
-| Make sure that your chatbot training data defines the expected `+{ "action": "...", "handler": "..." }+` on the mentioned mandatory `intent` object as defined in the xref:part5/chatbot.adoc#_chatbot_training_data[Chatbot training data] specification.
-
 | `+Domain ... is not reachable+`
 | Make sure the Juice Shop server has outgoing Internet connectivity and that the mentioned domain is not blocked by any firewall rules or proxies.
 

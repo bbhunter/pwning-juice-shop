@@ -61,7 +61,6 @@
 ** xref:part5/tutorials.adoc[Hacking Instructor tutorial scripts]
 ** xref:part5/cheat-detection.adoc[Cheat detection]
 ** xref:part5/code-snippets.adoc[Coding challenges]
-** xref:part5/chatbot.adoc[Chatbot training data]
 
 * Appendix
 

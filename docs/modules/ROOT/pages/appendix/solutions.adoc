@@ -14,19 +14,6 @@ are compatible with {juiceShopVersion} of OWASP Juice Shop.
 
 == ⭐ Challenges
 
-=== Receive a coupon code from the support chatbot
-
-. Log in as any user.
-. Click _Support Chat_ in the sidebar menu to visit
-http://localhost:3000/#/chatbot.
-. After telling the chatbot your name you can start chatting with it.
-. Ask it something similar to "Can I have a coupon code?" or "Please
-give me a discount!" and it will most likely decline with some
-unlikely excuse.
-. Keep asking for discount again and again until you finally receive a
-10% coupon code for the current month! This also solves the challenge
-immediately.
-
 === Use the bonus payload in the DOM XSS challenge
 
 . Solve the <<_perform_a_dom_xss_attack,Perform a DOM XSS attack>>
@@ -221,7 +208,7 @@ challenge.
 
 === A developer was careless with hardcoding unused but still valid credentials
 
-// TODO Add solution for "Exposed Credentials" challenge
+// TODO Add solution for exposedCredentialsChallenge
 
 === Access the administration section of the store
 
@@ -409,8 +396,7 @@ the security question.
 
 === Register a user with an empty email and password
 
-// TODO Add solution for "Empty User Registration" challenge
-🚧 Work in progress...
+// TODO Add solution for emptyUserRegistration
 
 === Take over the wallet containing our official Soul Bound Token
 
@@ -423,11 +409,11 @@ the security question.
 
 === Reveal some behind-the-scenes information on the chatbot as a non-admin user
 
-🚧 Work in progress...
+// TODO Add solution for aiDebuggingChallenge
 
 === Trick the chatbot into generating a coupon code for you
 
-🚧 Work in progress...
+// TODO Add solution for chatbotPromptInjectionChallenge
 
 
 == ⭐⭐⭐ Challenges
@@ -1080,11 +1066,15 @@ local system file!
 
 === The Juice Shop is susceptible to a known vulnerability in a library for which an advisory has already been issued
 
-// TODO Add solution for "Security Advisory" challenge
+// TODO Add solution for csafChallenge
 
 === Convince the chatbot to give you a coupon of 50% or more
 
-🚧 Work in progress...
+// TODO Add solution for chatbotGreedyInjectionChallenge
+
+=== Extract the chatbot's system prompt using prompt injection
+
+// TODO Add solution for systemPromptExtractionChallenge
 
 == ⭐⭐⭐⭐ Challenges
 
@@ -2387,7 +2377,7 @@ solve this challenge
 
 === Inform the shop about a leaked API key
 
-// TODO Add solution for "Leaked API Key" challenge
+// TODO Add solution for leakedApiKeyChallenge
 
 === Inform the shop about a typosquatting imposter that dug itself deep into the frontend
 
@@ -2484,31 +2474,6 @@ lazily only when (and to the extent) their content is to be used.footnote:5_1_6[
 ----
 ____
 
-=== Permanently disable the support chatbot
-
-. The Chatbot is built using an npm module called 'juicy-chat-bot'. The
-source code for the same can be found
-https://github.com/juice-shop/juicy-chat-bot[here]
-. Looking through the source, one can determine that user messages are
-processed inside a VM context, with a function called `process`
-. The vulnerable segment of the code is
-https://github.com/juice-shop/juicy-chat-bot/blob/15e424609dc59ada5bf0c114ca7a5ffc718501cc/index.js#L31[this statement],
-that the bot uses to remember usernames. The command
-*this.factory.run(`users.addUser("$\{token}", "$\{name}")`)* is
-equivalent to an eval statement inside the VM context. This can be
-exploited by including `"` and `)` in one's username
-. If one sets their username to *admin"); processQuery=null;
-users.addUser("1337", "test*, the final statement that gets executed
-would be
-+
-`users.addUser("token", "admin");` +
-`process = null;` +
-`users.addUser("1337", "test")`
-
-The process function, is therefore set to null and any further attempt
-by the bot to process a user's message would result in an error
-
-image:appendix/killed-chatbot.png[Killed chatbot])
 
 === Gain read access to an arbitrary local file on the web server
 
