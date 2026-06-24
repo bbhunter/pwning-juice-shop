@@ -21,7 +21,7 @@ When a new challenge is added to `challenges.yml`, follow these steps:
 
 ### 1. Identify the Target Files
 - **Category File**: Locate the `.adoc` file in `docs/modules/ROOT/pages/part2/` corresponding to the challenge's category (e.g., `injection.adoc` for 'Injection').
-- **Hints File**: Prepare to create `docs/modules/ROOT/partials/hints/{challengeKey}.adoc`.
+- **Hints File**: Hint partials are managed by the `partialize_hints.yml` pipeline. AI agents must not create or modify them.
 - **Master List**: Update `docs/modules/ROOT/pages/part2/README.adoc`.
 - **Solutions**: Update `docs/modules/ROOT/pages/appendix/solutions.adoc`.
 
@@ -40,9 +40,10 @@ When a new challenge is added to `challenges.yml`, follow these steps:
 - **Section Header**: Usually the first sentence of the description or a concise instruction.
 - **Anchor Name**: Lowercase version of the Section Header with spaces replaced by underscores and special characters removed.
 
-### 3. Create the Hint Partial
-- Create `docs/modules/ROOT/partials/hints/{challengeKey}.adoc`.
-- Include all hints from `challenges.yml` as a bulleted list.
+### 3. Hint Partials
+- Hint partials in `docs/modules/ROOT/partials/hints/` are managed exclusively by the `partialize_hints.yml` pipeline.
+- AI agents MUST NOT create or modify these files.
+- **Exception**: The 'Score Board' challenge (`scoreBoardChallenge`) does not have hints and must NEVER have a hint partial file.
 
 ### 4. Update the README.adoc
 - Add the challenge to the "Challenge hunting" table in alphabetical order.

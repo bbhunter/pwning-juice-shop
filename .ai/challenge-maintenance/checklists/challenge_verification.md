@@ -20,8 +20,8 @@ Follow these steps to verify that the documentation is in sync with `challenges.
 - [ ] Remove any detailed sections for challenges that no longer exist.
 
 ## 4. Hints Verification (`partials/hints/*.adoc`)
-- [ ] Verify that a hint file `{challengeKey}.adoc` exists for every challenge.
-- [ ] Compare the hints in the file with those in `challenges.yml`. They should be identical.
+- [ ] Verify that a hint file `{challengeKey}.adoc` exists for every challenge EXCEPT 'Score Board' (`scoreBoardChallenge`).
+- [ ] Ensure hint files are NOT modified by AI agents. They are managed by the `partialize_hints.yml` pipeline.
 - [ ] Identify and delete orphan hint files (those whose key is not in the inventory).
 
 ## 5. Solutions Verification (`solutions.adoc`)

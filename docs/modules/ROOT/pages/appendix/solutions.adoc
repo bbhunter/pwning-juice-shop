@@ -95,7 +95,7 @@ Feedback_ widget on the _About Us_ page.
 +
 image::appendix/zero_star_feedback-carousel.png[Zero star feedback in carousel]
 
-== Find an accidentally deployed code sandbox
+=== Find an accidentally deployed code sandbox
 
 . Go to the _Sources_ tab of your browsers DevTools and open the
 `main.js` file.

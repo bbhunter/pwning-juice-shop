@@ -24,14 +24,18 @@ Challenges are grouped by category (e.g., `xss.adoc`, `injection.adoc`). Each pa
   - The heading includes an anchor (e.g., `[[_anchor_name]]`) for direct linking from the main table.
   - Content includes a brief explanation of the challenge context.
   - **Hints Handling**: Hints are included from external files located in `docs/modules/ROOT/partials/hints/` using the `include::` directive.
+y    - **CRITICAL**: Hint partials are created and updated exclusively by the `partialize_hints.yml` pipeline. AI agents MUST NEVER create or modify these files.
+    - The 'Score Board' challenge (`scoreBoardChallenge`) does not have hints and must NEVER have a hint partial file.
   - **New Challenge Preparation Rules**:
     - The hint include (`include::partial$hints/*.adoc[]`) should only be added if a matching partial already exists in `docs/modules/ROOT/partials/hints/`.
     - If the partial does not exist, the expected partial include should be commented out (e.g., `// include::partial$hints/newChallenge.adoc[]`) and a `🚧 Work in progress...` note should be added below it.
 
 #### 3. Hints Handling
 - Hints are stored as small AsciiDoc snippets in `docs/modules/ROOT/partials/hints/`.
+- **Note**: These snippets are managed exclusively by the `partialize_hints.yml` pipeline. AI agents MUST NOT modify them.
 - This modular approach allows hints to be updated independently and potentially reused.
 - Challenges in category pages typically end with an `include` of their corresponding hint file.
+- **Exception**: The 'Score Board' challenge has no hints and no hint partial.
 
 #### 4. Step-by-Step Solutions (`appendix/solutions.adoc`)
 - All solutions are centralized in `docs/modules/ROOT/pages/appendix/solutions.adoc`.
