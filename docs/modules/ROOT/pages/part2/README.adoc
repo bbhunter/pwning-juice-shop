@@ -413,6 +413,10 @@ ifeval::[{is_ctf} == 1]
 | Inform the development team about a danger to some of _their_ credentials. (Send them the URL of the _original report_ or an assigned CVE or another identifier of this vulnerability)
 | xref:part2/vulnerable-components.adoc#_inform_the_development_team_about_a_danger_to_some_of_their_credentials[💡]
 
+| System Prompt Extraction
+| Extract the chatbot's system prompt using prompt injection, then submit your findings (including any confidential sections) via the Customer Complaint form.
+| xref:part2/injection.adoc#_extract_the_chatbots_system_prompt[💡]
+
 | Two Factor Authentication
 | Solve the 2FA challenge for user "wurstbrot". (Disabling, bypassing or overwriting his 2FA settings does not count as a solution)
 | xref:part2/broken-authentication.adoc#_solve_the_2fa_challenge_for_user_wurstbrot[💡]
@@ -968,6 +972,11 @@ ifeval::[{is_ctf} == 0]
 | Inform the development team about a danger to some of _their_ credentials. (Send them the URL of the _original report_ or an assigned CVE or another identifier of this vulnerability)
 | xref:part2/vulnerable-components.adoc#_inform_the_development_team_about_a_danger_to_some_of_their_credentials[💡]
 | xref:appendix/solutions.adoc#_inform_the_development_team_about_a_danger_to_some_of_their_credentials[📕]
+
+| System Prompt Extraction
+| Extract the chatbot's system prompt using prompt injection, then submit your findings (including any confidential sections) via the Customer Complaint form.
+| xref:part2/injection.adoc#_extract_the_chatbots_system_prompt[💡]
+| xref:appendix/solutions.adoc#_extract_the_chatbots_system_prompt[📕]
 
 | Two Factor Authentication
 | Solve the 2FA challenge for user "wurstbrot". (Disabling, bypassing or overwriting his 2FA settings does not count as a solution)

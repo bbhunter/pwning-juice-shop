@@ -95,6 +95,10 @@ ____
 | Infect the server with juicy malware by abusing arbitrary command execution.
 | ⭐⭐⭐⭐⭐⭐
 
+| System Prompt Extraction
+| Extract the chatbot's system prompt using prompt injection, then submit your findings (including any confidential sections) via the Customer Complaint form.
+| ⭐⭐⭐
+
 | User Credentials
 | Retrieve a list of all user credentials via SQL Injection.
 | ⭐⭐⭐⭐
@@ -136,6 +140,14 @@ specifies a maximum discount of 10%, but perhaps you can "persuade" it to be
 much more generous.
 
 include::../../partials/hints/chatbotGreedyInjectionChallenge.adoc[]
+
+[[_extract_the_chatbots_system_prompt]]
+== Extract the chatbot's system prompt
+
+The chatbot has a system prompt with both public and confidential instructions.
+Try to make it reveal its full configuration using prompt injection.
+
+include::../../partials/hints/systemPromptExtractionChallenge.adoc[]
 
 == Order the Christmas special offer of 2014
 
