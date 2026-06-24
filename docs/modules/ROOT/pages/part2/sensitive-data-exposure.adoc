@@ -56,6 +56,10 @@ include::../attributes.adoc[]
 | Take over the wallet containing our official Soul Bound Token (NFT).
 | ⭐⭐
 
+| Password Hash Leak
+| Obtain the password (hash) of the currently logged-in user directly from a REST API endpoint.
+| ⭐⭐
+
 | Reset Uvogin's Password
 | Reset Uvogin's password via the Forgot Password mechanism with _his original answer_ to his security question.
 | ⭐⭐⭐⭐
@@ -171,6 +175,12 @@ include::../../partials/hints/geoStalkingMetaChallenge.adoc[]
 == Take over the wallet containing our official Soul Bound Token
 
 include::../../partials/hints/nftUnlockChallenge.adoc[]
+
+== Obtain the password (hash) of the currently logged-in user directly from a REST API endpoint
+
+While modern web applications often separate the frontend from the backend via a REST API, developers sometimes forget that the API might return more data than the frontend actually needs or displays. This challenge is about identifying such an endpoint that leaks the password hash of the logged-in user.
+
+include::../../partials/hints/passwordHashLeakChallenge.adoc[]
 
 == Reset Uvogin's password via the Forgot Password mechanism
 
