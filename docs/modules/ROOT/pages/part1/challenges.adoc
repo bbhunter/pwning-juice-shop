@@ -61,14 +61,13 @@ Starting with `v12.0.0` tags were introduced to help classify challenges
 which either favor a certain hacking approach or share some trait
 orthogonal to the categories.
 
-* *Shenanigans* marks challenges which are not considered serious
-and/or realistic but exist more for entertainment
+* *AI / LLM* marks challenges that require the use of an AI language model to be solved
+* *Brute Force* marks challenges where automation of some security
+tool or custom script is an option or even prerequisite
+* *Code Analysis* marks challenges where it can be helpful to rummage
+through some source code of the application or a third party
 * *Contraption* indicates that a challenge is not exactly part of a
 realistic scenario but might be a bit forced or crafted
-* *OSINT* marks challenges which require some Internet research or
-_social stalking_ activity outside the application
-* *Good Practice* highlights challenges which are less about
-vulnerabilities but promoting good (security) practices
 * *Danger Zone* marks
 <<_potentially_dangerous_challenges,potentially dangerous challenges>>
 which are disabled on Docker/Heroku by default due to RCE or other
@@ -76,10 +75,15 @@ risks
 * *Good for Demos* highlights
 xref:part4/trainers.adoc#_challenges_for_demos[challenges which are suitable for live demos]
 or awareness trainings
+* *Good Practice* highlights challenges which are less about
+vulnerabilities but promoting good (security) practices
+* *OSINT* marks challenges which require some Internet research or
+_social stalking_ activity outside the application
 * *Prerequisite* marks challenges which need to be solved before one
 or more other challenges can be (realistically) solved
-* *Brute Force* marks challenges where automation of some security
-tool or custom script is an option or even prerequisite
+* *Requires {{dependency}}* marks challenges strictly depending on an external service, local endpoint, or API key in order to be solvable
+* *Shenanigans* marks challenges which are not considered serious
+and/or realistic but exist more for entertainment
 ifeval::[{is_ctf} == 1]
 * *Tutorial* marks challenges for which a Hacking Instructor script exists to assist
 newcomers
@@ -89,9 +93,8 @@ ifeval::[{is_ctf} == 0]
 <<_hacking_instructor,Hacking Instructor script>> exists to assist
 newcomers
 endif::[]
-* *Code Analysis* marks challenges where it can be helpful to rummage
-through some source code of the application or that of a third party
-* *Internet Traffic* marks challenges strictly depending on the server being able to connect with the Internet via e.g. WebSocket or JSON-RPC
+* *Web3* marks challenges which incorporate Web3 concepts or technology such as Blockchain, Crypto Currency, Smart Contracts, or NFT
+* *With Coding Challenge* marks a challenge that contains an associated coding challenge
 
 image::part1/tags.png[Tag breakdown]
 
