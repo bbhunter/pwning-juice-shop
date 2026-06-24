@@ -1,0 +1,8 @@
+// Use this template when adding a new challenge detailed section to a category .adoc file
+// NOTE: {Description} should be unique prose, not a copy of the YAML description or a mash-up of hints.
+[[_{anchor_name}]]
+== {Section Header}
+
+{Description}
+
+include::../../partials/hints/{challengeKey}.adoc[]
