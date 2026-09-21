@@ -171,14 +171,11 @@ instantly solves this challenge for you.
 . Visit http://localhost:3000/#/photo-wall
 . Right-click _Inspect_ the broken image in the entry labeled "😼
 #zatschi #whoneedsfourlegs"
-. You should find an image tag similar to `<img _ngcontent-akt-c18=""
-class="image"
-src="assets/public/images/uploads/😼-#zatschi-#whoneedsfourlegs-1572600969477.jpg"
-alt="😼 #zatschi #whoneedsfourlegs">` in the source
+. You should find an image tag similar to `<img _ngcontent-ng-c2590474826="" class="image" src="assets/public/images/uploads/ᓚᘏᗢ-#zatschi-#whoneedsfourlegs-1572600969477.jpg" alt="😼 #zatschi #whoneedsfourlegs">` in the source
 . Right-click _Open in new tab_ the `src` element of the image
 . Observe (in your DevTools _Network_ tab) that the request sent to the
 server is
-http://localhost:3000/assets/public/images/uploads/%F0%9F%98%BC-
+http://localhost:3000/assets/public/images/uploads/%E1%93%9A%E1%98%8F%E1%97%A2-
 . The culprit here are the two `#` characters in the URL, which are no
 problem for your OS in a filename, but are interpreted by your
 browser as HTML anchors. Thus, they are not transmitted to the server
@@ -186,7 +183,7 @@ at all.
 . To get them over to the server intact, they must obviously be
 URL-encoded into `%23`
 . Open
-http://localhost:3000/assets/public/images/uploads/😼-%23zatschi-%23whoneedsfourlegs-1572600969477.jpg
+http://localhost:3000/assets/public/images/uploads/%E1%93%9A%E1%98%8F%E1%97%A2-%23zatschi-%23whoneedsfourlegs-1572600969477.jpg
 and enjoy the incredibly cute photo of this pet being happy despite
 missing half a hind leg
 . Go back to the application, and the challenge will be solved.
