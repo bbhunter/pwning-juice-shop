@@ -89,7 +89,7 @@ time)
 . Explaining mitigation and prevention
 
 You can find more links to existing material in the
-https://github.com/juice-shop/juice-shop/blob/master/REFERENCES.adoc#lectures-and-trainings[Lectures and Trainings section]
+https://github.com/juice-shop/juice-shop/blob/master/REFERENCES.md#lectures-and-trainings[Lectures and Trainings section]
 of the project references on on GitHub.
 
 == Challenges for demos

@@ -12,7 +12,7 @@ included and tracked on the score board?
 * Did you spot a misbehaving UI component or broken image?
 * Did you enjoy a conference talk, podcast or video about OWASP Juice
 Shop that is missing in our
-https://github.com/juice-shop/juice-shop/blob/master/REFERENCES.adoc[references compilation on GitHub]?
+https://github.com/juice-shop/juice-shop/blob/master/REFERENCES.md[references compilation on GitHub]?
 
 In all the above (as well as other similar) cases, please reach out to
 the OWASP Juice Shop team, project leader or community!
